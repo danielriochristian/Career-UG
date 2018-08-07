@@ -1,0 +1,20 @@
+//     public function getRoleAdmin() {
+//       $rolesyangberhak = DB::table('roles')->where('id','=','1')->get()->first()->namaRule;
+//       return $rolesyangberhak;
+// }
+    public function __construct()
+    {
+        $this->middleware('auth');
+        // $this->middleware('rule:'.$this->getRoleAdmin().',nothingelse');
+    }
+    public function getRoot() {
+      if (Auth::User()->roles_id == 1) {
+        $manage = Admin::paginate(4);
+        return view('partial.manageradmin', compact('manage'));
+      } elseif (Auth::User()->roles_id == 2) {
+        $manage = Admin::paginate(4);
+        return view('partial.manageadmin', compact('manage'));
+      } else {
+        return 'hai pengguna! saat ini belom ada view nya karena yg buat males nambahin :V buat logout ketik /logout di akhiran lalu enter';
+      }
+    }
