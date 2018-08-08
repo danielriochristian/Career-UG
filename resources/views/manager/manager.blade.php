@@ -52,12 +52,8 @@
                 <!-- /Logo -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <form role="search" class="app-search hidden-sm hidden-xs m-r-10">
-                            <input type="text" placeholder="Search..." class="form-control"> <a href=""><i class="fa fa-search"></i></a> </form>
+                        <a class="profile-pic" href="/editprofile"> <b class="hidden-xs">{{Auth::User()->name}}</b></a>
                     </li>
-                    {{-- <li>
-                        <a class="profile-pic" href="#"> <img src="{{url('assets/plugins/images/users/varun.jpg')}}" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Steave</b></a>
-                    </li> --}}
                 </ul>
             </div>
             <!-- /.navbar-header -->
@@ -75,7 +71,7 @@
                 </div>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard Manager</a>
+                        <a href="/manager" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard Manager</a>
                     </li>
                     <li>
                         <a href="/manager" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Manage Admin</a>
@@ -93,17 +89,19 @@
         <!-- ============================================================== -->
         <!-- Page Content -->
         <!-- ============================================================== -->
+
         <div id="page-wrapper">
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Basic Table</h4> </div>
+                        <h4 class="page-title">Manager</h4> </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <ol class="breadcrumb">
                           <form class="" action="/logout" method="post">
                             {{ csrf_field() }}
                               <button type="submit" class="btn btn-warning" name="logout">Logout</button>
                           </form>
+
                         </ol>
                     </div>
                     <!-- /.col-lg-12 -->
@@ -115,6 +113,7 @@
                             @yield('manage_admin')
                             @yield('manage_vacancy')
                             @yield('add_vacancy')
+                            @yield('edit_profile')
                         </div>
                     </div>
                 </div>

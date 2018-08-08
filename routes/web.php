@@ -56,6 +56,8 @@ Route::POST('editPostRoles','ManageRolesController@editPost');
 */
 //dashboard manager
 Route::get('manager','ManagerController@index');
+Route::get('editprofile','ManagerController@editprofile');
+Route::POST('updateprofile','ManagerController@updateprofile');
 Route::POST('addPost','ManageAdminController@addPost');
 Route::POST('editPost','ManageAdminController@editPost');
 Route::POST('deletePost','ManageAdminController@deletePost');

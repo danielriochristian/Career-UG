@@ -30,4 +30,15 @@ class ManagerController extends Controller
     $manage = Admin::paginate(4);
       return view('partial.manageradmin', compact('manage'));
   }
+  public function editprofile(){
+    $manage = Admin::paginate(4);
+      return view('partial.editprofile', compact('manage'));
+  }
+  public function updateprofile(Request $request){
+    $manage= Auth::user();
+    $manage->name = $request->get('name');
+    $manage->email = $request->get('email');
+    $manage->save();
+    return redirect('/editprofile')->with('status', 'Profil Berhasil Di Update!');
+  }
 }
