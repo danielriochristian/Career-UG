@@ -68,3 +68,8 @@
         </div>
     </div>
 </div>
+<style media="screen">
+  body{
+    background-color: rgb(236, 236, 236);
+  }
+</style>
