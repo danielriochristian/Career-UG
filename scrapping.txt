@@ -1,0 +1,21 @@
+$url = "https://www.oploverz.in";
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$response = curl_exec($ch);
+		if (curl_errno($ch)) die(curl_error($ch));
+		curl_close($ch);
+		$re = '/<div class="thumb">(.*?)<\/div>/m';
+		preg_match_all($re, $response, $matches, PREG_SET_ORDER, 0);
+		foreach ($matches as $tes => $anime) {
+			//print_r();
+			$re = '/title="(.*?)"/m';
+			preg_match_all($re, $anime[1], $judulnya, PREG_SET_ORDER, 0);
+			$title_anime = $judulnya[0][1];
+			$re = '/img width="140" height="78" src="(.*?)"/m';
+			preg_match_all($re, $anime[1], $fotonya, PREG_SET_ORDER, 0);
+			$pic_anime = $fotonya[0][1];
+			$re = '/<a href="(.*?)"/m';
+			preg_match_all($re, $anime[1], $linknya, PREG_SET_ORDER, 0);
+			$link_anime = $linknya[0][1];
+			$hasil = $hasil.$title_anime.chr(10).$link_anime.chr(10);

@@ -63,6 +63,7 @@ Route::POST('editPost','ManageAdminController@editPost');
 Route::POST('deletePost','ManageAdminController@deletePost');
 Route::get('vacancy','ManageVacancyController@index');
 Route::get('create','ManageVacancyController@create');
+Route::post('postLogin','ManageVacancyController@store');
 
 /*
 |--------------------------------------------------------------------------

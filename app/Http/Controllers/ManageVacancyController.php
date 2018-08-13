@@ -8,7 +8,7 @@ use Response;
 use Illuminate\Support\Facades\Input;
 use App\http\Requests;
 use Auth;
-use DB;
+use DB; 
 use DataTables;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
