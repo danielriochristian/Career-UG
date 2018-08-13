@@ -38,6 +38,7 @@ class ManagerController extends Controller
     $manage= Auth::user();
     $manage->name = $request->get('name');
     $manage->email = $request->get('email');
+    $manage->password = bcrypt($request['password']);
     $manage->save();
     return redirect('/editprofile')->with('status', 'Profil Berhasil Di Update!');
   }
