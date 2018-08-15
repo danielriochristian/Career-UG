@@ -8,16 +8,27 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
   @include('frontend.title')
   @yield('title')
 </head>
 <body>
-@include('frontend.header')
-@include('frontend.carousel')
-@include('frontend.news2')
-@include('frontend.footer')
 
+@include('frontend.header')
+@yield('contact')
+@yield('vacancies')
+@yield('seeker')
+@yield('employer')
+@yield('tracer_alumni')
+@yield('tracer_perusahaan')
+@yield('view1')
+@yield('detail')
+@yield('help')
+@yield('surat')
+@yield('graduate')
+@yield('cv_major')
+@yield('cv_name')
+@yield('cv2')
+@include('frontend.footer')
 
 <div class="to_top"></div>
 
@@ -48,6 +59,6 @@ $(function(){
         }
     });
 });
-</script>
 
+</script>
 </html>

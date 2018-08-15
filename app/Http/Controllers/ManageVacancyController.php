@@ -8,7 +8,7 @@ use Response;
 use Illuminate\Support\Facades\Input;
 use App\http\Requests;
 use Auth;
-use DB; 
+use DB;
 use DataTables;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
@@ -30,9 +30,10 @@ class ManageVacancyController extends Controller
     {
         return view('partial.addvacancy');
     }
+
     public function store(Request $request)
-  {
-         $manages = new ManageVacancy;
+    {
+         $manages = new Vacancy;
          $manages->logo = $request->logo;
          $manages->company_title = $request->company_title;
          $manages->job_title = $request->job_title;
@@ -46,4 +47,30 @@ class ManageVacancyController extends Controller
          return redirect('ManageVacancy')->with('message','data berhasil ditambahkan!!');
 
    }
+
+   public function edit($id)
+   {
+       $manages = Vacancy::find($id);
+       if(!$manages){
+           abort(503);
+       }
+       return view('partial.editvacancy')->with('manages',$manages);
+   }
+
+       public function update(Request $request, $id)
+      {
+
+        $manages = new Vacancy;
+        $manages->logo = $request->logo;
+        $manages->company_title = $request->company_title;
+        $manages->job_title = $request->job_title;
+        $manages->job_description = $request->job_description;
+        $manages->company_overview = $request->company_overview;
+        $manages->location = $request->location;
+        $manages->company_info = $request->company_info;
+        // $manages->status = $request->status;
+        $manages->save();
+
+          return redirect('managevacancy')->with('message','data berhasil ditambahkan!!');
+      }
 }

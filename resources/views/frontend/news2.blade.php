@@ -14,7 +14,6 @@
 </div>
 </div>
 
-
 <style >
 .card {
       margin: 0 auto; /* Added */

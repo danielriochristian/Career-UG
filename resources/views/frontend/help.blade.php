@@ -1,62 +1,16 @@
-@extends('Home2')
-@section('seeker')
-    <div id="fullscreen_bg" class="fullscreen_bg">
+@extends('home2')
+@section('help')
   <div class="cardn card-container">
   <div class="container">
-      <center><h3>Register as Seeker</h3></center>
-      <div class="row">
+      <h3>Helpdesk</h3>
+      <p>Masalah Anda akan dijawab oleh Admin dalam jangka waktu 4 (empat) hari kerja
         <div class="col-xs-12 col-sm-6 col-md-6">
           <div class="form-group">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6">
               <h5><label for="exampleFormControlSelect1">Nama:</label></h5>
             <div class="form-group">
-              <input type="text" name="Nama:" id="Nama" class="form-control input-lg" placeholder="Nama" tabindex="1" style="width:200%">
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="form-group">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">Alamat:</label></h5>
-            <div class="form-group">
-              <input type="text" name="Alamat:" id="Alamat" class="form-control input-lg" placeholder="Alamat" tabindex="1" style="width:200%">
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-              <div class="form-group">
-                    <h5><label for="exampleFormControlSelect1">Jenis Kelamin:</label></h5>
-                    <select class="form-control" id="exampleFormControlSelect1" style="width:50%">
-                      <option>Laki-laki</option>
-                      <option>Perempuan</option>
-                    </select>
-                  </div>
-                </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="form-group">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">Jurusan:</label></h5>
-            <div class="form-group">
-              <input type="text" name="Jurusan:" id="Jurusan" class="form-control input-lg" placeholder="Jurusan" tabindex="1" style="width:200%">
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="form-group">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">Lulusan:</label></h5>
-            <div class="form-group">
-              <input type="text" name="Lulusan:" id="Lulusan" class="form-control input-lg" placeholder="Lulusan" tabindex="1" style="width:200%">
+              <input type="text" name="Nama:" id="Nama" class="form-control input-lg" placeholder="Nama" tabindex="1" style="width:300%">
             </div>
           </div>
         </div>
@@ -68,19 +22,62 @@
           <div class="col-xs-12 col-sm-6 col-md-6">
               <h5><label for="exampleFormControlSelect1">NPM:</label></h5>
             <div class="form-group">
-              <input type="text" name="NPM:" id="NPM" class="form-control input-lg" placeholder="NPM" tabindex="1" style="width:200%">
+              <input type="text" name="NPM:" id="NPM" class="form-control input-lg" placeholder="NPM" tabindex="1" style="width:300%">
             </div>
           </div>
         </div>
         </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="form-group">
+                    <h5><label for="exampleFormControlSelect1">Program Studi:</label></h5>
+                    <select class="form-control" id="exampleFormControlSelect1" style="width:70%">
+                      <option>Program Studi</option>
+                      <option>D3-Manajemen Informatika</option>
+                      <option>D3-Teknik Komputer</option>
+                      <option>D3-Akutansi Komputer</option>
+                      <option>D3-Manajemen Keuangan</option>
+                      <option>D3-Manajemen Pemasaran</option>
+                      <option>D3-Kebidanan</option>
+                      <option>S1-Sistem Informasi</option>
+                      <option>S1-Sistem Komputer</option>
+                      <option>S1-Teknik Informatika</option>
+                      <option>S1-Teknik Elektro</option>
+                      <option>S1-Teknik Mesin</option>
+                      <option>S1-Teknik Indrustri</option>
+                      <option>S1-Teknik Sipil</option>
+                      <option>S1-Teknik Arsitektur</option>
+                      <option>S1-Akuntansi</option>
+                      <option>S1-Manajemen</option>
+                      <option>S1-Psikoligi</option>
+                      <option>S1-Sastra Inggris</option>
+                      <option>S1-Ilmu Komunikasi</option>
+                      <option>S1-Kedokteran</option>
+                      <option>S1-Sastra Cina</option>
+                      <option>S1-Farmasi</option>
+                      <option>S1-Agro Teknologi</option>
+                      <option>S2-Sistem Informasi</option>
+                      <option>S2-Manajemen</option>
+                      <option>S2-Teknik Elektro</option>
+                      <option>S2-Teknik Sipil</option>
+                      <option>S2-Teknik Mesin</option>
+                      <option>S2-Magister Sastra</option>
+                      <option>S2-Psikologi Sains</option>
+                      <option>S2-Psikologi Profesi</option>
+                      <option>S2-Ilmu Komunikasi</option>
+                      <option>S3-Ilmu Ekonomi</option>
+                      <option>S3-Teknologi Informasi</option>
+                      <option>S3-Psikologi</option>
+                   </select>
+                  </div>
+                </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
           <div class="form-group">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">IPK:</label></h5>
+              <h5><label for="exampleFormControlSelect1">Tahun Lulus:</label></h5>
             <div class="form-group">
-              <input type="text" name="IPK:" id="IPK" class="form-control input-lg" placeholder="IPK" tabindex="1">
+              <input type="text" name="Tahun:" id="Tahun" class="form-control input-lg" placeholder="Tahun" tabindex="1" style="width:70%">
             </div>
           </div>
         </div>
@@ -92,7 +89,7 @@
           <div class="col-xs-12 col-sm-6 col-md-6">
               <h5><label for="exampleFormControlSelect1">Email:</label></h5>
             <div class="form-group">
-              <input type="text" name="Email:" id="Email" class="form-control input-lg" placeholder="Email" tabindex="1"style="width:200%">
+              <input type="text" name="Email:" id="Email" class="form-control input-lg" placeholder="Email" tabindex="1" style="width:300%">
             </div>
           </div>
         </div>
@@ -102,31 +99,16 @@
           <div class="form-group">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">Kontak:</label></h5>
+              <h5><label for="exampleFormControlSelect1">Keluhan:</label></h5>
             <div class="form-group">
-              <input type="text" name="Kontak:" id="Kontak" class="form-control input-lg" placeholder="Kontak" tabindex="1"style="width:200%">
+              <input type="text" name="Keluhan:" id="Keluhan" class="form-control input-lg" placeholder="Keluhan" tabindex="1" style="width:300%;">
             </div>
           </div>
         </div>
         </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6">
-          <div class="form-group">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5><label for="exampleFormControlSelect1">Password:</label></h5>
-            <div class="form-group">
-              <input type="text" name="Password:" id="Password" class="form-control input-lg" placeholder="Password" tabindex="1"style="width:200%">
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
-              <h5><label>
-                  <input type="checkbox" value="remember-me"> Remember me
-              </label></h5>
 <div class="container">
-          <center><button class="btna btn-lg btn-primary btn-block btn-signin" type="submit">Register</button></center>
+          <center><button class="btna btn-lg btn-primary btn-block btn-signin" type="submit">Submit</button></center>
 </div>
       </form><!-- /form -->
     <!-- <center><a href="#" class="forgot-password">
@@ -154,7 +136,7 @@
   }
 .card-container.cardn {
     /* margin-top: 10%; */
-    max-width: 800px;
+    max-width: 1000px;
     padding: 40px 40px;
 }
 

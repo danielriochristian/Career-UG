@@ -52,7 +52,7 @@
                 <!-- /Logo -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li>
-                        <a class="profile-pic" href="/editprofile"> <b class="hidden-xs">{{Auth::User()->name}}</b></a>
+                        <a class="profile-pic"> <b class="hidden-xs">{{Auth::User()->name}}</b></a>
                     </li>
                 </ul>
             </div>
@@ -71,13 +71,16 @@
                 </div>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="/manager" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard Manager</a>
+
                     </li>
                     <li>
                         <a href="/manager" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Manage Admin</a>
                     </li>
                     <li>
                         <a href="/vacancy" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Manage Vacancy</a>
+                    </li>
+                    <li>
+                        <a href="/editprofile" class="waves-effect"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i>Edit Profile</a>
                     </li>
                     <li>
                 </ul>

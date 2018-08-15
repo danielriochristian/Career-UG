@@ -17,9 +17,9 @@
                         <input type="email" value="{{Auth::User()->email}}" class="form-control form-control-line" name="email" id="example-email"> </div>
                 </div>
                 <div class="form-group">
-                    <label for="example-email" class="col-md-12">Email</label>
+                    <label for="example-password" class="col-md-12">Password</label>
                     <div class="col-md-12">
-                        <input type="password" class="form-control form-control-line" name="password" id="example-email" placeholder="Masukan password baru"> </div>
+                        <input type="password" class="form-control form-control-line" name="password" id="example-password" value="{{Auth::User()->password}}"> </div>
                 </div>
                 <div class="form-group">
                     <div class="pull-right">

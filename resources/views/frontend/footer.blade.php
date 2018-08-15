@@ -1,23 +1,24 @@
-<!-- Others -->
+<div class="container-xl-2">
+  <!-- Others -->
 <div class="container-xl-2" style="background-color:#460054">
   <div class="row" style="width:100%">
     <div class="col" style="margin-left:11%">
       <a class="text-left"style="font-size:24px;color:#ffffff">Other</a>
       <ul>
-        <a class="text-left" href="#" style="color:#ffffff"><li>News</li></a>
-        <a class="text-left" href="#" style="color:#ffffff"><li>Graduate List</li></a>
-        <a class="text-left" href="#" style="color:#ffffff"><li>CV Online by Name</li></a>
-        <a class="text-left" href="#" style="color:#ffffff"><li>CV Online by Major</li></a>
-        <a class="text-left" href="#" style="color:#ffffff"><li>Forum</li></a></ul>
+        <a class="text-left" href="/" style="color:#ffffff"><li>News</li></a>
+        <a class="text-left" href="/graduate" style="color:#ffffff"><li>Graduate List</li></a>
+        <a class="text-left" href="/name" style="color:#ffffff"><li>CV Online by Name</li></a>
+        <a class="text-left" href="/major" style="color:#ffffff"><li>CV Online by Major</li></a>
       </div>
       <div class="col" style="margin-left:-5%">
-        <a class="text-left"style="font-size:24px;color:#ffffff">Layanan Helpdesk</a>
-        <ul><a class="text-left" href="#" style="color:#ffffff"><li>Layanan Helpdesk & Verifikasi</li><a/></ul>
+        <a class="text-left" style="font-size:24px;color:#ffffff">Layanan Helpdesk</a>
+        <ul><a class="text-left" href="/help" style="color:#ffffff"><li>Layanan Helpdesk & Verifikasi</li><a/>
+        <a class="text-left" href="/surat" style="color:#ffffff"><li>Surat Keterangan Akreditasi</li><a/></ul>
         </div>
         <div class="col">
           <a class="text-left"style="font-size:24px;color:#ffffff">Tracer Study</a>
-          <ul><a class="text-left" href="#" style="color:#ffffff"><li>Survey Singkat Alumni</li></a>
-            <a class="text-left" href="#" style="color:#ffffff"><li>Survey Tracer Study</li></a></ul>
+          <ul><a class="text-left" href="/tracer_alumni" style="color:#ffffff"><li>Survey Singkat Alumni</li></a>
+            <a class="text-left" href="/tracer_perusahaan" style="color:#ffffff"><li>Survey Tracer Perusahaan</li></a></ul>
           </div>
       </div>
     </div>
@@ -39,12 +40,12 @@
         <div class="my-3" style="width:3px; height: 50px;background-color:#ffffff;margin-left:70%;"></div></td>
       </div>
       <div class="col-md-auto" style="margin-left:-2%">
-        <a class="nav-link active" href="#">
+        <a class="nav-link active" href="tel:+62 21 1500158">
         <i class="fa fa-phone-square"  style="font-size:15pt;color:#ffffff; margin-right:5px;"></i>
         <span style="font-size:15pt;color:#ffffff; margin-right:30px">1500158</span></a>
         <div class="row-md-auto" style="width:100%">
           <div class="col" style="margin-left:-7%">
-            <a class="nav-link active ml-2" href="#" style="margin-top:-3%">
+            <a class="nav-link active ml-2" href="mailto: yourname@email.com" style="margin-top:-3%">
               <i class="fa fa-envelope"  style="font-size:15pt;color:#ffffff; margin-right:5px;"></i>
               <span style="font-size:15pt;color:#ffffff">webmaster@gunadarma.ac.id</span></a>
           </div>
@@ -54,3 +55,4 @@
   </div>
 </div>
 <!-- End Footer -->
+</div>
