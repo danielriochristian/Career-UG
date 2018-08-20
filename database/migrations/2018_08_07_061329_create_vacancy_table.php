@@ -16,12 +16,12 @@ class CreateVacancyTable extends Migration
       Schema::create('vacancy', function (Blueprint $table) {
           $table->increments('id');
           $table->string('logo');
-          $table->string('comp_ttl');
-          $table->string('job_ttl');
-          $table->string('job_des');
-          $table->string('comp_ovr');
-          $table->string('loc');
-          $table->string('comp_inf');
+          $table->string('nama');
+          $table->string('info');
+          $table->string('persyaratan');
+          $table->string('alamat');
+          $table->string('kategori');
+          $table->string('prov');
           $table->timestamps();
           $table->smallInteger('status');
       });
