@@ -41,13 +41,13 @@ class User extends Authenticatable
       }
       return false;
     }
-    protected function guard()
-    {
-    return Auth::guard('guard-name');
-    }
-    protected function broker()
-    {
-    return Password::broker('name');
-    }
+    // protected function guard()
+    // {
+    // return Auth::guard('guard-name');
+    // }
+    // protected function broker()
+    // {
+    // return Password::broker('name');
+    // }
 
 }
