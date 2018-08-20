@@ -17,6 +17,7 @@ class CreateVacancyTable extends Migration
           $table->increments('id');
           $table->string('logo');
           $table->string('nama');
+          $table->string('desk');
           $table->string('info');
           $table->string('persyaratan');
           $table->string('alamat');

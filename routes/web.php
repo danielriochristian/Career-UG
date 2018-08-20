@@ -79,7 +79,7 @@ Route::POST('deletePost','ManageAdminController@deletePost');
 Route::get('vacancy','ManageVacancyController@index');
 Route::get('create','ManageVacancyController@create');
 Route::post('addVacancy','ManageVacancyController@store');
-Route::get('editvacancy/{id}','ManageVacancyController@edit');
+Route::get('vacancy/{id}/editvacancy','ManageVacancyController@edit');
 Route::put('updatevacancy/{id}','ManageVacancyController@update');
 
 /*

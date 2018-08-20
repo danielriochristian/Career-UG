@@ -117,6 +117,7 @@
                             @yield('manage_vacancy')
                             @yield('add_vacancy')
                             @yield('edit_profile')
+                            @yield('edit_vacancy')
                         </div>
                     </div>
                 </div>

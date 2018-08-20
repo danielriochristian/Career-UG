@@ -35,16 +35,17 @@ class ManageVacancyController extends Controller
     {
          $manages = new Vacancy;
          $manages->logo = $request->logo;
-         $manages->company_title = $request->company_title;
-         $manages->job_title = $request->job_title;
-         $manages->job_description = $request->job_description;
-         $manages->company_overview = $request->company_overview;
-         $manages->location = $request->location;
-         $manages->company_info = $request->company_info;
+         $manages->nama = $request->nama;
+         $manages->desk = $request->desk;
+         $manages->info= $request->info;
+         $manages->persyaratan = $request->persyaratan;
+         $manages->alamat = $request->alamat;
+         $manages->kategori = $request->kategori;
+         $manages->prov = $request->prov;
          // $manages->status = $request->status;
          $manages->save();
 
-         return redirect('ManageVacancy')->with('message','data berhasil ditambahkan!!');
+         return redirect('vacancy')->with('message','data berhasil ditambahkan!!');
 
    }
 
@@ -62,15 +63,16 @@ class ManageVacancyController extends Controller
 
         $manages = new Vacancy;
         $manages->logo = $request->logo;
-        $manages->company_title = $request->company_title;
-        $manages->job_title = $request->job_title;
-        $manages->job_description = $request->job_description;
-        $manages->company_overview = $request->company_overview;
-        $manages->location = $request->location;
-        $manages->company_info = $request->company_info;
+        $manages->nama = $request->nama;
+        $manages->info= $request->info;
+        $manages->desk = $request->desk;
+        $manages->persyaratan = $request->persyaratan;
+        $manages->alamat = $request->alamat;
+        $manages->kategori = $request->kategori;
+        $manages->prov = $request->prov;
         // $manages->status = $request->status;
         $manages->save();
 
-          return redirect('managevacancy')->with('message','data berhasil ditambahkan!!');
+          return redirect('vacancy')->with('message','data berhasil ditambahkan!!');
       }
 }

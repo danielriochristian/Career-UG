@@ -6,36 +6,40 @@
 
 <h3 class="box-title">Tambah Vacancy</h3>
 <form action="/addVacancy" method="post">
-<div class="box box-warning">
+<div class="box box-warning"> {{csrf_field()}}
     <div class="form-group">
-      <label> Image </label> <br>
+      <label> Logo </label> <br>
       <label> <b>*Hanya gambar yang dapat dimasukkan </b> </label> <br>
     	  <input type="file" accept="image/jpeg,image/tiff,image/x-png" id="logo" name="logo">
     </div>
 		<div class="form-group">
-              {{csrf_field()}}
-			<label> Company Title</label>
-			<input type="text" class="form-control" name="company_title" id="company_title" placeholder="Company Name">
+			<label> Nama Perusahaan </label>
+			<input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Perusahaan">
 		</div>
     <div class="form-group">
-			<label> Job title</label>
-			<input type="text" class="form-control" name="job_title" id="job_title" placeholder="Job Title">
+			<label> Info </label>
+			<textarea name="info" id="info"> </textarea>
 		</div>
     <div class="form-group">
-      <label> Job Description </label>
-			<textarea name="job_description" id="job_description"> </textarea>
+      <label> Dekripsi </label>
+			<textarea name="desk" id="desk"> </textarea>
 		</div>
     <div class="form-group">
-			<label> Company Overview</label>
-			<input type="text" class="form-control" name="company_overview" id="company_overview" placeholder="Company Overview">
+      <label> Persyaratan </label>
+			<textarea name="persyaratan" id="persyaratan"> </textarea>
 		</div>
     <div class="form-group">
-      <label> Location </label>
-      <input type="text" class="form-control" name="location" id="Location" placeholder="Location">
+			<label> Alamat </label>
+			<textarea name="alamat" id="alamat"> </textarea>
+		</div>
+    <div class="form-group">
+      <label> Kategori </label>
+      <textarea name="kategori" id="kategori"> </textarea>
     </div>
     <div class="form-group">
-      <label> Company Info </label>
-      <input type="text" class="form-control" name="company_info" id="company_info" placeholder="Company Info">
+      <label> Provinsi </label>
+      <input type="text" class="form-control" name="prov" id="prov" placeholder="Provinsi">
+    </div>
 		<!-- <div class="form-group">
 			<label>Status</label>
       <select class="form-control" name="status">
